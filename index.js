@@ -16,8 +16,6 @@ let notes = [
   },
 ];
 
-app.get("/", (request, response) => response.send("<h1>Hello Asif!</h1>"));
-
 app.get("/api/notes", (request, response) => response.json(notes));
 
 app.get("/api/notes/:id", (request, response) => {
